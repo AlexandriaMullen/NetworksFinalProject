@@ -1,0 +1,249 @@
+Albania : 41.327546
+Algeria : 36.752887
+American Samoa : -14.275632
+Andorra : 42.506317
+Angola : -8.839988
+Anguilla : 18.214813
+Antarctica : -90
+Antigua and Barbuda : 17.12741
+Argentina : -34.603684
+Armenia : 40.179186
+Aruba : 12.509204
+Australia : -35.282
+Austria : 48.208174
+Azerbaijan : 40.409262
+Bahamas : 25.047984
+Bahrain : 26.228516
+Bangladesh : 23.810332
+Barbados : 13.113222
+Belarus : 53.90454
+Belgium : 50.85034
+Belize : 17.251011
+Benin : 6.496857
+Bermuda : 32.294816
+Bhutan : 27.472792
+Bolivia : -16.489689
+Bosnia and Herzegovina : 43.856259
+Botswana : -24.628208
+Bouvet Island : 54.43
+Brazil : -15.794229
+British Indian Ocean Territory : 21.3419
+British Virgin Islands : 18.428612
+Brunei : 4.903052
+Bulgaria : 42.697708
+Burkina Faso : 12.371428
+Burundi : -3.361378
+Cambodia : 11.544873
+Cameroon : 3.848033
+Canada : 45.42153
+Cape Verde : 14.93305
+Cayman Islands : 19.286932
+Central African Republic : 4.394674
+Chad : 12.134846
+Chile : -33.44889
+China : 39.904211
+Christmas Island : -10.420686
+Cocos (Keeling) Islands : -12.188834
+Colombia : 4.710989
+Comoros : -11.717216
+Congo (DRC) : -4.441931
+Congo (Republic) : -4.26336
+Cook Islands : -21.212901
+Costa Rica : 9.928069
+CÃ´te d'Ivoire : 6.827623
+Croatia : 45.815011
+Cuba : 23.05407
+CuraÃ§ao : 12.122422
+Cyprus : 35.185566
+Czech Republic : 50.075538
+Denmark : 55.676097
+Djibouti : 11.572077
+Dominica : 15.309168
+Dominican Republic : 18.486058
+Ecuador : -0.180653
+Egypt : 30.04442
+El Salvador : 13.69294
+Equatorial Guinea : 3.750412
+Eritrea : 15.322877
+Estonia : 59.436961
+Ethiopia : 8.980603
+Falkland Islands (Islas Malvinas) : -51.697713
+Faroe Islands : 62.007864
+Fiji : -18.124809
+Finland : 60.173324
+France : 48.856614
+French Guiana : 4.92242
+French Polynesia : -17.551625
+French Southern Territories : -21.3419
+Gabon : 0.416198
+Gambia : 13.454876
+Georgia : 41.715138
+Germany : 52.520007
+Ghana : 5.603717
+Gibraltar : 36.140773
+Greece : 37.983917
+Greenland : 64.18141
+Grenada : 12.056098
+Guadeloupe : 16.014453
+Guam : 13.470891
+Guatemala : 14.634915
+Guernsey : 49.455443
+Guinea : 9.641185
+Guinea-Bissau : 11.881655
+Guyana : 6.801279
+Haiti : 18.594395
+Honduras : 14.072275
+Hong Kong : 22.396428
+Hungary : 47.497912
+Iceland : 64.126521
+India : 28.613939
+Indonesia : -6.208763
+Iran : 35.689198
+Iraq : 33.312806
+Ireland : 53.349805
+Isle of Man : 54.152337
+Israel : 32.0853
+Italy : 41.902784
+Jamaica : 18.042327
+Japan : 35.709026
+Jersey : 49.186823
+Jordan : 31.956578
+Kazakhstan : 51.160523
+Kenya : -1.292066
+Kiribati : 1.451817
+Kosovo : 42.662914
+Kuwait : 29.375859
+Kyrgyzstan : 42.874621
+Laos : 17.975706
+Latvia : 56.949649
+Lebanon : 33.888629
+Lesotho : -29.363219
+Liberia : 6.290743
+Libya : 32.887209
+Liechtenstein : 47.14103
+Lithuania : 54.687156
+Luxembourg : 49.611621
+Macau : 22.166667
+Macedonia (FYROM) : 41.997346
+Madagascar : -18.87919
+Malawi : -13.962612
+Malaysia : 3.139003
+Maldives : 4.175496
+Mali : 12.639232
+Malta : 35.898909
+Marshall Islands : 7.116421
+Martinique : 14.616065
+Mauritania : 18.07353
+Mauritius : -20.166896
+Mayotte : -12.780949
+Mexico : 19.432608
+Micronesia : 6.914712
+Moldova : 47.010453
+Monaco : 43.737411
+Mongolia : 47.886399
+Montenegro : 42.43042
+Montserrat : 16.706523
+Morocco : 33.97159
+Mozambique : -25.891968
+Myanmar (Burma) : 19.763306
+Nagorno-Karabakh Republic : 39.826385
+Namibia : -22.560881
+Nauru : -0.546686
+Nepal : 27.717245
+Netherlands : 52.370216
+Netherlands Antilles : 12.1091242
+New Caledonia : -22.255823
+New Zealand : -41.28646
+Nicaragua : 12.114993
+Niger : 13.511596
+Nigeria : 9.076479
+Niue : -19.055371
+Norfolk Island : -29.056394
+North Korea : 39.039219
+Northern Cyprus : 35.185566
+Northern Mariana Islands : 15.177801
+Norway : 59.913869
+Oman : 23.58589
+Pakistan : 33.729388
+Palau : 7.500384
+Palestine : 31.9073509
+Panama : 9.101179
+Papua New Guinea : -9.4438
+Paraguay : -25.26374
+Peru : -12.046374
+Philippines : 14.599512
+Pitcairn Islands : -25.06629
+Poland : 52.229676
+Portugal : 38.722252
+Puerto Rico : 18.466334
+Qatar : 25.285447
+RÃ©union : -20.882057
+Romania : 44.426767
+Russia : 55.755826
+Rwanda : -1.957875
+Saint Pierre and Miquelon : 46.775846
+Saint Vincent and the Grenadines : 13.160025
+Samoa : -13.850696
+San Marino : 43.935591
+SÃ£o TomÃ© and PrÃ­ncipe : 0.330192
+Saudi Arabia : 24.749403
+Senegal : 14.764504
+Serbia : 44.786568
+Seychelles : -4.619143
+Sierra Leone : 8.465677
+Singapore : 1.280095
+Slovakia : 48.145892
+Slovenia : 46.056947
+Solomon Islands : -9.445638
+Somalia : 2.046934
+South Africa : -25.747868
+South Georgia and the South Sandwich Islands : -54.28325
+South Korea : 37.566535
+South Ossetia : 42.22146
+South Sudan : 4.859363
+Spain : 40.416775
+Sri Lanka : 6.89407
+St. BarthÃ©lemy : 17.896435
+St. Kitts and Nevis : 17.302606
+St. Lucia : 14.010109
+St. Martin : 18.067519
+Sudan : 15.500654
+Suriname : 5.852036
+Svalbard and Jan Mayen : 78.062
+Swaziland : -26.305448
+Sweden : 59.329323
+Switzerland : 46.947974
+Syria : 33.513807
+Taiwan : 25.032969
+Tajikistan : 38.559772
+Tanzania : -6.162959
+Thailand : 13.756331
+Timor-Leste : -8.556856
+Togo : 6.172497
+Tokelau : -9.2005
+Tonga : -21.139342
+Transnistria : 46.848185
+Trinidad and Tobago : 10.654901
+Tristan da Cunha : -37.068042
+Tunisia : 36.806495
+Turkey : 39.933364
+Turkmenistan : 37.960077
+Turks and Caicos Islands : 21.467458
+Tuvalu : -8.520066
+U.S. Virgin Islands : 18.3419
+Uganda : 0.347596
+Ukraine : 50.4501
+United Arab Emirates : 24.299174
+United Kingdom : 51.507351
+United States : 38.907192
+Uruguay : -34.901113
+Uzbekistan : 41.299496
+Vanuatu : -17.733251
+Vatican City : 41.902179
+Venezuela : 10.480594
+Vietnam : 21.027764
+Wallis and Futuna : -13.282509
+Western Sahara : 27.125287
+Yemen : 15.369445
+Zambia : -15.387526
+Zimbabwe : -17.825166
