@@ -1,5 +1,6 @@
 #dealing with the excel file:
 #https://datatofish.com/read_excel/
+#This is now outdated, we will have to write new code for better data we found :(
 import pandas as pd
 import tkinter as tk
 from tkinter import filedialog
