@@ -46,7 +46,7 @@ def decide_which_countries():
     try:
         list_of_countries.remove('CntName')
     except ValueError:
-        print('CntName removed already')
+        print('List of Countries gathered.')
     
     #print(list_of_countries)
 
@@ -61,7 +61,7 @@ def make_migrant_table():
 
     for country in countries:
 
-        print("Country: ", country, "|", end = " ")
+        #print("Country: ", country, "|", end = " ")
         
         excelPath = "./data/" + country + ".xlsx"
         xl = pd.ExcelFile(excelPath)
