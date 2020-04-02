@@ -69,7 +69,7 @@ def make_migrant_table():
 
         data = country_data(country, data)
 
-        data_by_country.append([country, data])
+        data_by_country.append(data)
 
     return data_by_country
 
