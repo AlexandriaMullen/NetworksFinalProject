@@ -54,11 +54,16 @@ def make_migrant_table():
         excelPath = "./data/" + country + ".xlsx"
         xl = pd.ExcelFile(excelPath)
         # we need the Australia, Germany, US, (etc) by Residence tab:
+        #but the tab is different for each thing
+        print("Country: ", country, "|", end = " ")
         df = None
-        if country == "United States of America":
-            df = xl.parse("USA by " + criteria)
-        else:
-            df = xl.parse(country + " by " + criteria)
+        try:
+            if country == "United States of America":
+                df = xl.parse("USA by " + criteria)
+            else:
+                df = xl.parse(country + " by " + criteria)
+        except:
+            df = xl.parse("USA by " + criteria) #USA fails sometimes because python string checking sucks
 
         data = df.to_numpy()
 
@@ -75,6 +80,6 @@ def country_data(country, data):
     new_data = []
     for datum in data:  # data is list of rows
         if (datum[0] == 'Immigrants'):
-            row = [[datum[2] + 'to ' + country], [datum[9:42]]]  # dub check 42 or 43
+            row = [[datum[2] + 'to ' + country], [datum[9:43]]]  # dub check 42 or 43 (DONE)
             new_data.append(row)
     return new_data
