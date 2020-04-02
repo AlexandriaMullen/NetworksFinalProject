@@ -12,8 +12,7 @@ m = Basemap(projection='cyl',
 m.drawcoastlines()
 m.drawcountries(linewidth=2)
 plt.title('Routing Cities')
-#try m.bluemarble()
-m.etopo()
+m.bluemarble()
 
 latDict = {}
 lonDict={}
@@ -31,11 +30,9 @@ with open("longarray.txt") as f:
         
 def route(a,b):
     m.drawgreatcircle(lonDict.get(a),latDict.get(a),lonDict.get(b),latDict.get(b),linewidth=4,color='b')
-
-#Testing
+    
 route('French Polynesia','Mexico')
 route('Algeria','Australia')
 route('South Korea','France')
-
 
 plt.show()
