@@ -80,6 +80,6 @@ def country_data(country, data):
     new_data = []
     for datum in data:  # data is list of rows
         if (datum[0] == 'Immigrants'):
-            row = [[datum[2] + 'to ' + country], [datum[9:43]]]  # dub check 42 or 43 (DONE)
+            row = [datum[2] + 'to ' + country, [datum[9:43]]]  # dub check 42 or 43 (DONE)
             new_data.append(row)
     return new_data
