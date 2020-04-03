@@ -1,7 +1,7 @@
 #https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
 from sklearn.linear_model import LogisticRegression as lr
-#https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
-from sklearn.neighbors import KNeighborsClassifier as knn
+#https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html
+from sklearn.neighbors import KNeighborsRegressor as knn
 #our own code:
 import parse_new_data
 
