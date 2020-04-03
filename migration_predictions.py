@@ -2,20 +2,42 @@
 from sklearn.linear_model import LogisticRegression as lr
 #https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html
 from sklearn.neighbors import KNeighborsClassifier as knn
-from sklearn.svm import LinearSVC
 #our own code:
 import parse_new_data
 
-def knn_migration(data):
+def knn_migration(x_train,y_train,x_test,y_test):
+    neigh = knn(n_neighbors = 3)
+    neigh.fit(x_train,y_train)
+    
+    print("Accuraccy: ", neigh.score(x_test,y_test))
+    
+    input_year = input("What year would you like to predict?\nYear must be after 2013")
+    input_year = int(input_year)
+
+    print(neigh.predict([[input_year]]))    
     return None
 
-def lr_migration(data):
-    return None
-
-def linSVM_migration(data):
+def lr_migration(x_train,y_train,x_test,y_test):
+    clf = lr(random_state = 0).fit(x_train,y_train)
+    
+    print("Accuraccy: ", clf.score(x_test,y_test))
+    
+    input_year = input("What year would you like to predict?\nYear must be after 2013")
+    input_year = int(input_year)
+    
+    print(clf.predict([[input_year]]))
+    
     return None
 
 def main(): 
+    
+    #IDEA:
+    #Ask usr for countries
+    #gather data,
+    #trim, clean up data as necessary
+    #push data to ML model
+    #make predictions!!
+    
     print("These are the following countries:")
     print(parse_new_data.decide_which_countries())
     cnt_to_cnt = input("From which country to which country would you like to predict?\n Input should be typed as \'CountryName to CountryName\'.\n")
