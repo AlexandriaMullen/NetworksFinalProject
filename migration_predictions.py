@@ -29,43 +29,4 @@ def lr_migration(x_train,y_train,x_test,y_test):
     
     return None
 
-def main(): 
-    
-    #IDEA:
-    #Ask usr for countries
-    #gather data,
-    #trim, clean up data as necessary
-    #push data to ML model
-    #make predictions!!
-    
-    print("These are the following countries:")
-    print(parse_new_data.decide_which_countries())
-    cnt_to_cnt = input("From which country to which country would you like to predict?\n Input should be typed as \'CountryName to CountryName\'.\n")
 
-    cnts = cnt_to_cnt.split(' ')
-    cnts.remove('to')
-    print("You have entered:", cnts)
-
-    imm_data = []
-
-    #from parse data:
-    data = parse_new_data.make_migrant_table()
-    for dest_country in data:
-        if(dest_country == cnts[1]):
-            print(dest_country)
-            for incoming_country in dest_country:
-                imm_data = incoming_country[1]
-                print(incoming_country)
-    print(imm_data)     
-
-    X = [a for a in range(1980,2013)]
-
-    x_train = []
-    y_train = []
-    x_test = []
-    y_test = []
-    #split daat up into testing, training;
-    #1980-2004 will be training
-    #2004-2013 will be testing
-
-main()
