@@ -1,5 +1,16 @@
 import parse_new_data
 
+def trim_data(X,imm_data):
+    new_imm_data = []
+    new_years = []
+    for index in range(len(imm_data)):
+        if(imm_data[index] == '..'):
+            continue
+        else:
+            new_imm_data.append(imm_data[index])
+            new_years.append(X[index])
+    return new_imm_data,new_years
+
 def main():
     # IDEA:
     # Ask usr for countries
