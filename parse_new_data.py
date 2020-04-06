@@ -46,7 +46,8 @@ def decide_which_countries():
     try:
         list_of_countries.remove('CntName')
     except ValueError:
-        print('List of Countries gathered.')
+        #print('List of Countries gathered.')
+        print('\n')
     
     # print(list_of_countries)
 
