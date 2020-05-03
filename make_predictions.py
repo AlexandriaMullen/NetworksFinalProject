@@ -3,6 +3,9 @@ import migration_predictions
 import synthetic_data_maker
 from sklearn.model_selection import train_test_split
 from matplotlib import pyplot
+from mpl_toolkits.basemap import Basemap
+import matplotlib.pyplot as plt
+
 
 def trim_data(X,imm_data):
     new_imm_data = []
@@ -43,6 +46,44 @@ def main():
     cnts[1] = cnts[1][1:]   #remove frst character
     
     print("You have entered:", cnts)
+    
+    plt.figure(figsize=(20,10))
+    m = Basemap(projection='cyl',
+                llcrnrlat = -90,
+                llcrnrlon = -180,
+                urcrnrlat = 90,
+                urcrnrlon = 180,
+                resolution='l')
+   
+    def route(a,b):
+        x = (lonDict.get(a)+lonDict.get(b))/2
+        y = (latDict.get(a)+latDict.get(b))/2
+        p = a+" to "+b
+        m.drawgreatcircle(lonDict.get(a),latDict.get(a),lonDict.get(b),latDict.get(b),linewidth=4,color='r')
+        plt.annotate(p,(x,y),color='w',size=15)
+     
+        m.drawcoastlines()
+        m.drawcountries(linewidth=2)
+        plt.title('Routing Cities')
+        m.bluemarble()
+    
+    latDict = {}
+    lonDict={}
+    
+    with open("latarray.txt") as f:
+        for line in f:
+            (key, val) = line.split(" : ")
+            line = line.strip('\n')
+            latDict[key] = float(val)
+    with open("longarray.txt") as f:
+        for line in f:
+            (key, val) = line.split(" : ")
+            line = line.strip('\n')
+            lonDict[key] = float(val)
+    
+    route(cnts[0],cnts[1])
+    plt.show()
+    
     
     imm_data = []
 
