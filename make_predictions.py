@@ -47,7 +47,7 @@ def main():
     
     print("You have entered:", cnts)
     
-    plt.figure(figsize=(20,10))
+    plt.figure(figsize=(16,8))
     m = Basemap(projection='cyl',
                 llcrnrlat = -90,
                 llcrnrlon = -180,
@@ -64,7 +64,7 @@ def main():
      
         m.drawcoastlines()
         m.drawcountries(linewidth=2)
-        plt.title('Routing Cities')
+        plt.title('Visualizing Migration Flow')
         m.bluemarble()
     
     latDict = {}
