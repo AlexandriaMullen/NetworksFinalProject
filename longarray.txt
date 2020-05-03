@@ -238,7 +238,7 @@ Uganda : 32.58252
 Ukraine : 30.5234
 United Arab Emirates : 54.697277
 United Kingdom : -0.127758
-United States : -77.036871
+United States of America : -77.036871
 Uruguay : -56.164531
 Uzbekistan : 69.240073
 Vanuatu : 168.327325
