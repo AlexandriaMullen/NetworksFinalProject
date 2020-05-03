@@ -1,5 +1,5 @@
 #https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html
-from sklearn.linear_model import LogisticRegression as lr
+from sklearn.linear_model import LinearRegression as lr
 #https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html
 from sklearn.neighbors import KNeighborsRegressor as knn
 
@@ -21,10 +21,7 @@ def knn_migration(x_train,y_train,x_test,y_test):
 
 def lr_migration(x_train,y_train,x_test,y_test):
     #FIT AND PREDICT:
-    clf = lr(random_state = 0,
-             #solver = lbfgs,
-             #multi_class = auto
-             ).fit(x_train,y_train)
+    clf = lr().fit(x_train,y_train)
     
     print("Accuraccy: ", clf.score(x_test,y_test))
     
