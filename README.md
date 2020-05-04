@@ -1,103 +1,48 @@
-https://docs.google.com/document/d/1MZYxEPmWc6IAR6Lm6AvEvpatbwO-momxlq7E4CS1wh0/edit?usp=sharing
+https://docs.google.com/document/d/1-w5Jrsx5CZGikdY2GmnE4VUA3SgonLVUBA0n54b83sw/edit?usp=sharing
 
-# Modelling & Predicting International Migration Trends
-
-Amanda Bris | bris@bc.edu <br/>
-Alexandria Mullen | mullenad@bc.edu <br/>
-Matthew Preston | prestomb@bc.edu <br/>
-Matthew Spana | spanam@bc.edu <br/>
-
-## Topics in CS: Introduction to Network Science, Boston College
-
-February 19, 2020
-
-### Abstract <br/>
+# Problem Formulation
 International flows of migration have historically affected the social, political and economic climate of every nation-state.  Recent developments in global trade, transport and technology have connected the world in an unprecedented manner.  As such, it follows that migration and movement of people is becoming an increasingly important phenomenon to understand.  Despite efforts by non-governmental bodies such as the United Nations to provide clear guidelines on how to measure migration, much of the information available is inaccurate, hard-to-understand and scarce.  Our goal is to first: display migration patterns of the past with the best available data, and second: use machine learning algorithms to predict international migration patterns, then display this information through visual and statistical representations.
-
+# Project Outline
 Our project is based on data from the United Nations’ Department of Economic and Social Affairs, Population Division on international migrant stock.  This dataset provides information on inflows and outflows of migrants by country of origin and destination from 2012 to the present.
+We chose to work with Python because of the available libraries and it’s relative simplicity.  We found it unnecessary to utilize an Object Oriented approach for this application, and  we each had familiarity with the language. Python allowed us to quickly pick up libraries and prototype code we could then iterate on. We used Matplotlib Basemap and SKLearn. These libraries are great resources for higher quality data visualization and for the machine learning aspects. 
+For data visualization, we are utilizing Basemap and Matplotlib to first initialize the data set and then to make it aesthetically pleasing. This works better than some other pay-per-use sites or outside companies specializing in data visualization because we get to experience building the maps directly from the data, and we have more flexibility with how we represent that data. 
+Our project uses machine learning algorithms from the built-in library Scikit-learn (sklearn) using data to predict migration patterns every year up to the next ten years. We have utilized the linear regression and KNN regression models in order to predict the change in each flow from and to each country, or each edge on our graph.  
+# QUESTIONS
+# Did you meet your milestone stated in the initial report? 
+We mentioned in our midterm presentation that we would perhaps integrate our program into a webpage where a user could input two countries and predict the flow of migrants from one to another. However, due to time constraints, we decided to simply run our program on an IDE. Most of the milestones that we achieved were completed prior to the midterm report. Following the midterm report, we worked on merging the visual and the prediction model. We also fixed bugs encountered while trying to work with SKlearn. We have met the following milestones formally stated in our initial report.
+# What did you learn from this project?
+In this project, we used and became fairly confident with the Scikit-learn library and the Matplotlib Basemap toolkit. We became particularly familiar with the linear regression and KNN regression models from SKLearn. Additionally, we learned the importance of finding accurate and abundant data in order to create an effective prediction model. We had trouble with the United Nations source, which had the most accurate data available, due to the data not spanning back far enough. However, this is a limitation that we had to accept due to the lack of other sources of data. 
+# Analysis
+We decided to analyze a migration network model using Linear Regression and KNN with SKlearn Library, generic map data visualization with Python, backend data parsing, and prediction data visualizations. Using these tools, we were able to model a migration flow from a select number of countries based on UN data. This model was then utilized to make predictions for how migration trends should look in the coming years. With these predictions, we will gain insight on how the world will look in the future, and maybe even be able to see how COVID-19 will make an impact on migration trends, as real life migration network flow in the future should deviate from our predictions due to this disease. 
+This was an important topic for us to study because our world is so globalized and thus, it is important to look at the world as a whole, not just at what is happening in individual countries of nation-states. By studying migration patterns, insight is also gained in other areas such as the economy and humanitarian crises. Below we will go into why studying migration patterns helps make these other areas clearer. 
+Also, when we embarked on this topic, we did not realize how much of an impact COVID-19 would have on the world yet. It is quite possible that this disease will change how people migrate. With this in mind, our prediction models may be very off from what really happens in the coming years. However, this can be an asset for comparison. We should be able to compare our predicted data to the actual data and see how COVID-19 affected migration. If we see such a drastic difference between the migration patterns, this is not a good sign, “In fact, global inequality is likely to increase in the medium-to-long term, in part because of the pandemic’s lasting impact on migration. Countries such as the Philippines, Bangladesh, Ghana, and Honduras rely heavily on remittances from citizens abroad”, (Yayboke). This means that more affluent nations are keeping their money close to home instead of spending abroad and employing migrant workers. Thus, people who rely on the global economy for income will be devastated in the coming years. Using a predicted model and the actual migration model for comparison should alert the international community that countries in the Global South should be aided financially and perhaps migration requirements loosened. 
+By looking at migration patterns we can see how the global economy is doing. In the past years, a lot of migration has been happening from middle-income nations into upper-income ones. This typically occurs so that workers can send money back home, also known as remittances. These remittances are highly valuable to lower-income nations, making around 8% of their GDP (Connor). This movement signifies that the worldwide economy is becoming more globalized and dependent on many nations, “As free trade agreements for goods and services increased between middle- and high-income countries, so has the movement of people,” (Connor). When nations become more shut-off, this exchange of services does not take place in significant amounts, and thus can devastate the economies of middle-income nations. 
+Not only do migration trends help visualize the global economy, but they also show how humanitarian crises are being handled. Things that can trigger humanitarian intervention caused migration include cyclones, tsunamis, earthquakes, epidemics, nuclear and industrial accidents, acts of terrorism, environmental degradation, drought, famine, climate change, and situations of generalized violence and political instability (“Humanitarian Crises and Human Movement”). These cause migrations based on displacement, trapped populations, anticipatory movement, and mixed migration. Of these four effects, trapped populations is the only one that signifies a population staying in one place. This can be an issue if there is a major crisis occurring in a nation and the population there is unable to move. A problem as such can be seen in migration patterns if there is not a lot of migration out of a nation and at the same time they are experiencing turmoil. The other three effects are shown in migration trends when a nation experiencing a crisis has a significant amount of migration to neighboring nations or other nations accepting refugees (“Humanitarian Crises and Human Movement”). By combining knowledge of what is happening in the world and network modeling, we are able to see what course of action nations have taken in dealing with major issues. 
+To analyze world problems, we needed some computational tools to help. This is what our project has been working on in creating a migration model based on UN data and predicting future migration trends. Fact-based models like these are important, as without them, any nation can claim that they are handling their problems in a humane way when really they are not. If we were to continue this project further, it would be great to have more data to import into our model and analyze. Detailed below is how we analyzed what data we had and how we constructed our migration models. 
+In addition, we used the Scikit-Learn Machine Learning library. We have utilized the linear regression and KNN regression models in order to make our predictions. While using the KNN format, we are only able to ask the machine yes or no (classification) questions, when we want to obtain a number from the machine learning aspect, allowing us to give an estimated prediction on future migration patterns. Thus, instead of heavily relying on the KNN classification, we have been more reliant on the linear regression and KNN regression models, also from SKlearn. We were able to make appropriate tweaks (such as how many near neighbors the KNN model should consult) to the linear regression and KNN models within the constructs of this library, but the lack of data (even when just focusing on the US) prevented us from constructing tailored versions of these models of our own. This meant that one of our biggest hurdles was the data. As it turns out, governments have been upping their efforts in recent years to gather immigration data, but nothing before 1980 for the majority of countries is available. This hinders machine learning models in any capacity since they need 1000s of samples to come close to being accurate. 
+For each country, we could predict the future trend from one country to another.  Unfortunately, this left us with samples from 1980 - 2013, only 33 years, which is not a lot. To try to combat this problem, we decided to make artificial data. In doing this, we realized that the data is probably not accurate down to the person, so there’s a percentage range (+/- migrants) for each year that is the ballpark accurate number. If we generated a random number of points above or below the UN’s number for each year, then that would preserve our trendline, keep our synthetic data accurate, and boost our models’ accuracies. This idea takes inspiration from SMOTE (Synthetic Minority Oversampling Technique) which draws lines between classified points and generates new points on those lines. The percentage range we decided on was +/-15% because of a paper on the UN’s migratory data by Nico Keilman. This attempts to account for persons counted multiple times for leaving and re-entering a country, people not counted due to undocumented migration, and miscalculations of migration data in response to refugee crises. Even a professional organization like the UN needs to be allowed some margin for error.
+Furthermore, our map visualization involves using Matplotlib’s Basemap tool.  Basemap is a library for plotting 2D data on maps in Python.  It provides the facilities to transform coordinates to one of 25 different map projections (using the PROJ.4 C library). We use the bluemarble map background, which pulls data from NASA. Despite its somewhat slow performance, it is the most aesthetically pleasing. Matplotlib is then used to plot contours, images, vectors, lines or points in the transformed coordinates. Basemap includes the GSSH (now GSHHG) coastline dataset, as well as datasets for rivers, state and country boundaries from GMT. These datasets can be used to draw coastlines, rivers and political boundaries on maps at several different resolutions. Geospatial visualization of flows between countries using Matplotlib and Basemap generate their results very slowly when using certain parameters. In order to represent the curved surface of the earth on a two-dimensional map, a map projection is needed, since this cannot be done without distortion. We chose cylindrical equidistant projection ‘cyl’, which displays crude resolution coastlines and allows us to plot latitude/longitude coordinates. Using bluemarble and cyl, we are able to plot the coordinates of capital cities of the countries we are inputting and create a line between them representing the flow of migration. 
+We could have modified our project to just have data from the US. However, this would not be as useful for later analysis of issues that affect nations on a global scale, not just the US. Also, the US data is similarly low in quantity. What we came up with is an idea that should be continued on by people with access to more data, as it could serve as a great research tool for how COVID-19 has impacted global migration patterns and what that means for our future. The more we understand how the world has changed the better equipped we will be to make necessary adjustments. 
 
-Our project will use matplotlib basemap toolkit in order to visualize inflows and outflows of migration by country, including our predictions for future years.  Basemap is a library for plotting 2D data on maps in Python.  It provides the facilities to transform coordinates to one of 25 different map projections (using the PROJ.4 C library).  Matplotlib is then used to plot contours, images, vectors, lines or points in the transformed coordinates.
+# References
+Connor, Phillip, D’Vera Cohn, and Ana Gonzalez-Barrera. “Changing Patterns of Global 
+	Migration and Remittances”. Pew Research Center; Social & Demographic Trends. 
+	Pewsocialtrends.org. 17 Dec. 2013. Web. 
+https://www.pewsocialtrends.org/2013/12/17/changing-patterns-of-global-migration-and-remittances/
+“Humanitarian Crises and Human Movement: Summary Report, Year One”. The Crisis 
+	Migration Project. Institute for the Study of International Migration, Georgetown 
+	University. Web. 
+https://www.un.org/en/development/desa/population/events/pdf/11/Crisis_Migration_Summary_Report-Final-February2013.pdf
+“International Migrant Stock 2019”. United Nations, Department of Economic and Social 
+	Affairs, Population Division, International Migration. un.org . Web.
+https://www.un.org/en/development/desa/population/migration/data/estimates2/estimates19.asp
+Scikit-learn: Machine Learning in Python, Pedregoas et al., JMLR 12, pp. 2825-2830, 2011. 
+	Web.
+https://scikit-learn.org/stable/modules/classes.html#module-sklearn.linear_model
+Yayboke, Erol. “Five Ways COVID-19 Is Changing Global Migration”. Center for Strategic 
+	International Studies. csci.org. 25 March 2020. Web.
+https://www.csis.org/analysis/five-ways-covid-19-changing-global-migration
+Keilman, Nico. “How Accurate Are the United Nations World Population Projections?” 
+Population and Development Review, vol. 24, 1998, pp. 15–41. JSTOR, www.jstor.org/stable/2808049. Accessed 3 May 2020.
 
-Furthermore, our project will utilize machine learning algorithms using the data to predict migration patterns every year up to the next ten years.  Using two models, (Multiple) Linear Regression and K-Nearest Neighbor (KNN), we will predict the change in each ‘flow’ from and to each country, or each edge on our graph.  Our code will be written in Python, using the built-in library Scikit-learn (sklearn).  A stretch goal is to utilize our own, modified algorithms of Linear Regression and KNN.
 
-### Concrete Problem Statement <br/>
-Our interest in this project is based on the potential use for our described program and the importance of the topic in the modern world.  For better or for worse, immigration has been a political issue in the past years, even to the extent of being the defining issue of the United States 2016 Presidential Election.  Our project could be used as a resource for informing both governments and citizens on this issue.  Accurate, reliable data and data visualization regarding international flows of migration is needed in order for governments to know the migration patterns of their own citizens, and that of foreigners coming into their country.  This knowledge will enable governments and policymakers to effectively plan integration programs, recruit specialized workers and adopt policies to address internal or external migration.
-
-Migration patterns can tell us about the state of a country.  States experiencing large influxes in migration tend to have a higher quality of life compared to their neighbors and adopt a more open immigration policy.  Conversely, countries experiencing high external migration might be experiencing conflict, disease, natural disaster or overall poor quality of life.  Looking at migration does not only tell us about where people are going to or coming from, it also exposes patterns reflecting the push and pull factors of a country.
-
-Furthermore, our project has the potential to become a product if we allow custom input data into the software, which will be at the basis of the visualization.  This will allow us to create a product for migration data not just for the timeframe we have access to, but for the future as well.  
-
-With all this in mind, an itemized list of our goals would contain the following.  For the construction of our initial demonstration, we would like to implement: generic map data visualization, predictions based on multiple linear regression with the sklearn library, predictions based on KNN with the sklearn library, backend data parsing and data visualization of the predictions.  For the construction of the final project we would like to implement dataset hotswitch, multiple linear regression with tailored algorithms and KNN with tailored algorithms.
-
-### Potential Challenges<br/>
-In constructing our visualization and prediction of migrant flow, we will be confronted with challenges such as determining the best data source to use, obtaining a sufficient amount of data on developing countries, ensuring the data is up to date, learning how to use Python libraries for data visualization, and making the most accurate predictions possible through our machine learning model.  
-Additionally, the prediction model will be challenging due to the size of the dataset we have access to.  On one hand, the dataset provides extremely detailed information for every country.  However, this data only extends to 2012, and our goal is to predict migration trends for the next 10 years.  This might present limitations in the accuracy of our model, as well as the complications of working with such a large breadth but relatively smaller depth of the dataset.  
-
-### Timeline & Milestones
- 
-1. March 13: Construction of initial demo:
-  - Linear Regression with Sklearn Library
-  - KNN with Sklearn Library
-  - Generic Map Data Visualization
-  - Backend Data Parsing
-  - Prediction Data Visualization
-
-2. March 20: Midterm Report:
-  - Present Demonstration
-
-3. April 17:
-  - Construction of Final Project:
-  - Dataset Hotswitch
-  - Linear Regression with Modified Algorithms
-  - KNN with Modified Algorithms
-
-4. April 24: Final Project Presentation and Report:
-  - Final Demonstration
-
-### Works Cited
-
-United Nations, Department of Economic and Social Affairs, Population Division.  (2017). Trends in International Migrant Stock: The 2017 Revision. United Nations database, POP/DB/MIG/Stock/Rev.2017. https://www.un.org/en/development/desa/population/migration/data/estimates2017/estimates17.asp 
-
-(Summary: Presents estimated international migrant stock for years 1990, 1995, 2000, 2005, 2010, 2015 and 2017. Will serve as a primary data set for our analysis and visualization.)
-
-United Nations, Department of Economic and Social Affairs. (2017). International Migration Report 2017 Highlights (ST/ESA/SER.A/404). United Nations. https://www.un.org/en/development/desa/population/migration/publications/migrationreport/docs/MigrationReport2017_Highlights.pdf
-
-(Summary: Comprehensive report of current world events and general factors that influence migration patterns and practices, released biennially. Updated for calendar year 2017.)
-
-United Nations, Department of Economic and Social Affairs, Population Division. (2019). International Migration 2019 Report (ST/ESA/SER.A/438). United Nations. https://www.un.org/en/development/desa/population/migration/publications/migrationreport/docs/MigrationReport2019_Highlights.pdf
-
-(Summary: Comprehensive report of current world events and general factors that influence migration patterns and practices, released biennially. Updated for calendar year 2019.)
-
-Migration Policy Institute. (2017). Immigrant and Emigrant Populations by Country of Origin and Destination. Migration Policy Institute (MPI) Data Hub. https://www.migrationpolicy.org/programs/data-hub/charts/immigrant-and-emigrant-populations-country-origin-and-destination?width=1000&height=850&iframe=true
-
-(Summary: Dataset containing immigrant and emigrant populations by country of origin. Will serve as an additional dataset for our visualization and predictions.)
-
-Hawkins, Ed. (2017). Connection Map. The Python Graph Gallery. https://python-graph-gallery.com/connection-map/
-
-(Summary: Provides framework for world-map connections. Will be integral for the development of our visualization component.)
-
-Mode Analytics Inc. (2020). SQL + Python + R.  All in one environment. Mode. https://mode.com/notebooks/?utm_source=google&utm_medium=cpc&utm_campaign=g_nam_dg_search_generic_python&utm_term=python%20data%20visualization&utm_content=python_data_visualization&utm_adgroup=84793374859&device=c&gclid=EAIaIQobChMI--2Q_v3E5wIVx5-zCh3TCQsREAAYAyAAEgKlPvD_BwE
-
-(Summary: Provides a structural framework for a comprehensive integration of our backend and frontend aspects.)
-
-Bijwaard, Govert E. (2008). Modeling Migration Dynamics of Immigrants. Erasmus University Rotterdam, and Tinbergen Institute. https://papers.tinbergen.nl/08070.pdf
-
-(Summary: Provides insight into migration predictions from a demographic point of view.  Emphasizes prediction of individual likelihood to remain in the migrated country, contrasted to our macro-focused approach of flow dynamics.)
-
-Carammia, Marcello & Dumont, Jean-Christophe. (May 2018). Can we anticipate future migration flows? Organisation for Economic Co-operation and Development (OECD). https://www.oecd.org/els/mig/migration-policy-debate-16.pdf
-
-(Summary: Explores the viability of predicting migration flows over time, and general feasibility of current approaches.  Serves as comparison and contrast to our methods.)
-
-OECD.Stat. (2018). International Migration Database. OECD. https://stats.oecd.org/Index.aspx?DataSetCode=MIG
-
-(Summary: A comprehensive dataset for prediction algorithms to run on.  Includes general migration inflow and outflow, asylum-seeker inflow, and current foreign-born populations and labor forces, amongst others.)
-
-Pison, Gilles. (13 March 2019). Which countries have the most immigrants? World Economic Forum. https://www.weforum.org/agenda/2019/03/which-countries-have-the-most-immigrants-51048ff1f9/
-
-(Summary: Provides an understanding of immigrant makeup of various countries, a useful set of complementary information for comparison to immigrant flow.)
-
-Author, de Haas, Hein. Author, Czaika, Mathias. Author, Flahaux, Marie‐Laurence. Author, Mahendra, Edo. Author, Natter, Katharina. Author, Vezzoli, Simona. & Author, Villares‐Varela, María. (8 October 2019). International Migration: Trends, Determinants, and Policy Effects. Population and Development Review, volume 45 (No.  4). https://doi.org/10.1111/padr.12291 
-
-(Summary: A general understanding on current thoughts regarding migration.  Provides context for the predictive work we are accomplishing.)
-
------------------------------------------------------------------------------------------------------
